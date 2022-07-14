@@ -1,0 +1,32 @@
+Search Problems:
+    Agent: the person/PC solving
+    State: state of problem
+    Action: for specific states
+    Transition model: example - function(State, action) -> state?
+    goal test: drvier destination
+    Path cost: numerical o performance cost
+
+Problem Definition:
+    Node: 
+        a state
+        a parent(note that generated this node)
+        an action(action applied to parent to get node)
+        a path cost(from initial state to node)
+    Frontier:
+        a data structure that contains all the nodes
+    Approach:
+        start with initial state
+        Repeat:
+            if frontier empty - end no solution
+            if node is goal - return solution
+            else node analyzed - remove node
+                  Add resulting nodes to the frontier
+         Explored set:
+             don't explore again
+            
+Types of search algorithm:
+    Depth first search - complete one search tree till depth, reach dead end and explore another
+    Breadth first search - search all branches one by one, check where solution is reached fastest
+    
+Code for python!
+        
